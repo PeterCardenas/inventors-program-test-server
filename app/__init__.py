@@ -15,3 +15,7 @@ def root():
     arr.sort()
   duration = time.time() - start
   return f"<p>Shuffled a %d length array for %d iterations. Took %s seconds</p>" % (arr_len, num_itrs, duration)
+
+if __name__ == "__main__":
+  app.run(host="0.0.0.0")
+
